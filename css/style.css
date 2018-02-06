@@ -1,0 +1,253 @@
+
+
+html {
+    font-family: 'Raleway', sans-serif;
+    /*font-size: 0.625em; */
+}
+h2 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+a {
+    font-weight: 700;
+    color: #000;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 2rem 15px;
+    margin: auto;
+}
+.hamburger {
+    display: none;
+}
+nav li {
+    list-style: none;
+    transition: 0.5s cubic-bezier(0.5, 0.15, 0.17, 1);
+}
+
+nav li:hover {
+    border-top: 2px solid #ff6033;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-vertical {
+    flex-direction: column;
+}
+.bottom  {
+    align-items: flex-end;
+}
+.margin-top {
+    margin-top: 1.5rem;
+}
+.margin-right {
+    margin-right: 30px;
+}
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.top-section {
+    height: 100vh;
+}
+.half-width {
+    width: 50%;
+}
+
+.table-wrapper {
+    box-shadow: 1px 1px 10px #000;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    margin: 0 0 1rem 0;
+    background-color: #fff;
+
+}
+.i-wrapper {
+    border-left: 1px solid rgba(10, 10, 10, 0.25);
+    flex: 1;
+    box-sizing: content-box;
+}
+.a-wrapper {
+    padding: 1rem;
+    flex: 3;
+}
+button, .img-wrapper, .gallery img {
+    box-shadow: 1px 1px 10px #000;
+} 
+
+.subscribe {
+    height: 350px;
+    background-image: url(../gfx/tlobor.jpg);
+    background-position: center;
+}
+.subscribe .container {
+    display: table;
+    height: 100%;
+}
+.inner-subscribe {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer .container {
+    padding: 0 15px;
+}
+footer p {
+    padding-top: 1rem;
+}
+
+.header-wrapper {
+    background-image: url(../gfx/tlo1.jpg);
+    background-position: center;
+}
+.services-right-h2 {
+    position: absolute;
+    top: 40%;
+    left: -1rem;
+}
+.services-right {
+    position: relative;
+}
+.logo {
+    font-family: 'Pacifico', cursive;
+}
+
+
+/*colors*/
+.top-section button {
+    background-color: #ff6033;
+}
+.gallery button {
+    background-color: #5585a2;
+}
+.subscribe button {
+    background-color: #96b92c;
+}
+.blog button {
+    background-color: #f72b3b;
+}
+footer span {
+    color: #f72b3b;
+}
+footer {
+    color: #b9b9b9;
+    background-color: #262626;
+}
+.about h2, .services h2, .blog h2, .about p, .blog p {
+    color: #fff;
+}
+.about {
+    background-color: #00b4b4;
+}
+.services {
+    background-color: #70bfff;
+}
+.gallery {
+    background-color: #ffe92f;
+}
+.blog {
+    background-color: #b07cf7;
+}
+.subscribe input {
+    border-color: #000;
+}
+.contact input, textarea {
+    background-color: rgba(0, 196, 196, 0.4); 
+    border: none;
+}
+.contact input::placeholder, textarea::placeholder {
+    color: #fff;
+}
+.contact {
+    background-image: url(../gfx/contact-bg.jpg);
+    background-position: center;
+}
+form {
+    margin-bottom: 2rem;
+}
+
+.img-wrapper-inner {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    height: 85%;
+    width: 85%;       
+}
+
+.img-wrapper {
+    position: relative;
+    color: #fff;   
+}
+.text-wrapper-inner {
+    vertical-align: bottom;
+    display: table-cell;
+}
+.text-wrapper {
+    display: table;
+    height: 75%;
+}
+.date {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.75rem;
+    border-radius: 5%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.img-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(transparent, black);
+    opacity: .6; 
+  }
+
+@media all and (max-width: 991px) {
+    h1 {
+        text-align: center;
+        
+    }
+    .text-wrapper-inner {
+        display: inline-block;
+    }
+    .img-wrapper-inner {
+        top: 0.03rem;
+        left: 0.03rem;
+    }
+    .text-wrapper small {
+        display: none;
+    }
+}
+@media all and (max-width: 580px) {
+    .text-wrapper {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    nav {
+        display: none;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+    ul {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
